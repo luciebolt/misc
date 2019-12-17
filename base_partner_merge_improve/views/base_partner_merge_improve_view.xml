@@ -7,7 +7,7 @@
             <field name='model'>base.partner.merge.automatic.wizard</field>
             <field name="inherit_id" ref="base.base_partner_merge_automatic_wizard_form"/>
             <field name="arch" type="xml">
-                <xpath expr="//field[@name='partner_ids']/field[@name='email']" position="before">
+                <xpath expr="//field[@name='partner_ids']/tree/field[@name='email']" position="before">
                     <field name="ref"/>
                 </xpath>
             </field>
